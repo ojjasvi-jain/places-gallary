@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  flex-grow: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 1s ease-in;
+}
+
+.panel.active {
+  flex: 6;
+}
